@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Rapport médecin</title>
+  </head>
+  <body>
+    <div class="container bg-transparent border-1 rounded-2 " style="padding-top: 55px;">
+      <h1 class="text-center ">Rapport médecin</h1>
+      <form #f="ngForm" (ngSubmit)="send(f)" >
+        <div class="form-group">
+          <label for="id">Identifiant</label>
+          <input type="number" class="form-control"  placeholder="Entrez l'identifiant" required name="id" #id="ngModel" ngModel >
+        </div>
+        <div class="alert alert-danger" *ngIf="id.errors?.['required']&& id.touched">
+          Entrer l'identifiant
+        </div>
+        <div class="form-group">
+          <label for="tensionArterielle">Tension artérielle</label>
+          <input type="text" class="form-control"  placeholder="Entrez la tension artérielle en mmHg" required name="bloodtension" #bloodtension="ngModel" ngModel >
+        </div>
+        <div class="alert alert-danger" *ngIf="bloodtension.errors?.['required']&& bloodtension.touched">
+          Entrer la tension artérielle
+        </div>
+        <div class="form-group">
+          <label for="frequenceCardiaque">Fréquence cardiaque</label>
+          <input type="text" class="form-control"  placeholder="Entrez la fréquence cardiaque en battements par minute"required name="heartbeats" #heartbeats="ngModel" ngModel >
+        </div>
+        <div class="alert alert-danger" *ngIf="heartbeats.errors?.['required']&& heartbeats.touched">
+          Entrez la fréquence cardiaque
+        </div>
+        <div class="form-group">
+          <label for="poids">Poids</label>
+          <input type="text" class="form-control" placeholder="Entrez le poids en kg"required name="weight" #weight="ngModel" ngModel>
+        </div>
+        <div class="alert alert-danger" *ngIf="weight.errors?.['required']&& weight.touched">
+          Entrez le poids
+        </div>
+        <div class="form-group">
+          <label for="nom">Nom du médicament</label>
+          <input type="text" class="form-control"  placeholder="Entrez le nom du médicament" required name="medication" #medication="ngModel" ngModel >
+        </div>
+        <div class="alert alert-danger" *ngIf="medication.errors?.['required']&& medication.touched">
+          Entrez le nom du médicament
+        </div>
+        <div class="form-group">
+          <label for="dose">Dose</label>
+          <input type="text" class="form-control"  placeholder="Entrez la dose"required name="dose" #dose="ngModel" ngModel >
+        </div>
+        <div class="alert alert-danger" *ngIf="dose.errors?.['required']&& dose.touched">
+          Entrez le nom du médicament
+        </div>
+        <div class="form-group">
+          <label for="frequence">Durée de traitement</label>
+          <input type="text" class="form-control" id="traitement" placeholder="Entrez la durée de traitement" required name="duration" #duration="ngModel" ngModel >
+        </div>
+        <div class="alert alert-danger" *ngIf="duration.errors?.['required'] && duration.touched">
+          Entrez la durée de traitement
+        </div>
+        <div class="form-group">
+          <label for="Observation"> Observation </label>
+          <input type="text" class="form-control" id="Observation" placeholder="Entrez l'observation" required name="Observation" #Observation="ngModel" ngModel >
+        </div>
+        <div class="alert alert-danger" *ngIf="Observation.errors?.['required']&& Observation.touched">
+          Entrer L'observation
+        </div>
+
+        <div class="alert alert-danger" *ngIf="messageErr">
+          {{messageErr}}
+        </div>
+        <div class="alert alert-success" *ngIf="messageSuccess">
+          {{messageSuccess}}
+      </div>
+        <div class="d-flex justify-content-center">
+          <button type="submit" class="btn btn-primary "[disabled]="f.invalid">Enregistrer</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+
+<div class="container " style="padding-top: 55px;">
+  <div class="formbold-main-wrapper">
+    <!-- Author: FormBold Team -->
+    <!-- Learn More: https://formbold.com -->
+    <div class="formbold-form-wrapper">
+      <form #f="ngForm" (ngSubmit)="appointement(f)" style="width: 600px;margin-left: 250px;padding-top: 25px;">
+        <div class="form-group">
+          <label for="firstname"> Nom  </label>
+          <input type="text" class="form-control"  placeholder="Nom " required name="name" #name="ngModel" ngModel >
+        </div>
+        <div class="alert alert-danger" *ngIf="name.errors?.['required']&& name.touched">
+          Entrer le nom
+        </div>
+        <div class="form-group">
+          <label for="lastname"> Prenom  </label>
+          <input type="text" class="form-control"  placeholder="Prenom " required name="prenom" #prenom="ngModel" ngModel >
+        </div>
+        <div class="alert alert-danger" *ngIf="prenom.errors?.['required']&& prenom.touched">
+          Entrer le prénom
+        </div>
+        <div class="form-group">
+          <label for="email"> Adresse email </label>
+          <input type="email" class="form-control"  placeholder="Adresse email" required name="email" #email="ngModel" ngModel >
+        </div>
+        <div class="alert alert-danger" *ngIf="email.errors?.['required']&& email.touched">
+          Entrer l'adresse email
+        </div>
+        <div class="form-group">
+          <label for="name"> Télephone: </label>
+          <input type="number" class="form-control"  placeholder="Télephone " required name="telephone" #telephone="ngModel" ngModel >
+        </div>
+        <div class="alert alert-danger" *ngIf="telephone.errors?.['required']&& telephone.touched">
+          Entrer le numéro de Télephone
+        </div>
+        <div class="form-group">
+          <label for="date">Date:</label>
+          <input type="date" class="form-control"  placeholder="Prenom " required name="date" #date="ngModel" ngModel >
+        </div>
+        <div class="alert alert-danger" *ngIf="date.errors?.['required']&& date.touched">
+          Entrer la date
+        </div>
+        <div class="d-flex justify-content-center">
+          <button type="submit" class="btn btn-primary "[disabled]="f.invalid">Envoyer</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+

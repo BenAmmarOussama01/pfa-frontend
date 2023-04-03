@@ -1,0 +1,73 @@
+
+.contact-info .boxes-wrapper {
+  position: relative;
+  z-index: 3;
+  margin-top: -40px;
+  overflow: hidden;
+  border-radius: 10px
+}
+
+.contact-info .boxes-wrapper>[class*=col-]:nth-of-type(1) .contact-box {
+  background-color: #21cdc0
+}
+
+.contact-info .boxes-wrapper>[class*=col-]:nth-of-type(2) .contact-box {
+  background-color: #3851a2
+}
+
+.contact-info .boxes-wrapper>[class*=col-]:nth-of-type(3) .contact-box {
+  background-color: #0d2157
+}
+
+.contact-info .contact-box {
+  position: relative;
+  padding: 45px;
+  height: 100%
+}
+
+.contact-info .contact-box .contact__title {
+  font-size: 19px
+}
+
+.contact-info .contact-box .contact__icon {
+  font-size: 50px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 80px;
+  flex: 0 0 80px;
+  max-width: 80px
+}
+
+.contact-info .contact-box .contact__desc,
+.contact-info .contact-box .contact__icon,
+.contact-info .contact-box .contact__title,
+.contact-info .contact-box .time__list li {
+  color: #fff
+}
+
+.contact-info .contact-box .phone__number {
+  font-size: 23px;
+  margin-top: 5px;
+  font-weight: 600;
+  color: #fff!important
+}
+
+.contact-info .contact-box .phone__number .icon-phone {
+  font-size: 17px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 10px;
+  background-color: #1ebaae
+}
+
+.contact-info .contact-box .btn__white.btn__outlined {
+  height: 42px;
+  border: 1px solid rgba(255, 255, 255, .25)
+}
+
+.card{
+background-color: #379bbc;
+border-radius: 5px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Détailles patients</title>
+  </head>
+  <body>
+    <div class="card-body">
+      <div class="table-responsive">
+          <table  class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                  <tr>
+                      <th>Nom du patient</th>
+                      <th>Age</th>
+                      <th>Tension artérielle</th>
+                      <th>Fréquence cardiaque</th>
+                      <th>Poids</th>
+                      <th>Nom du médicament</th>
+                      <th>Durée de traitement</th>
+                  </tr>
+              </thead>
+              <tbody>
+
+                  <tr>
+                      <td>{{dataObject.firstname}}{{dataObject.lastname}}</td>
+                      <td>{{dataObject.age}}</td>
+                      <td>{{dataObject.bloodtension}}</td>
+                      <td>{{dataObject.heartbeats}}</td>
+                      <td>{{dataObject.weight}}</td>
+                      <td>{{dataObject.medication}}</td>
+                      <td>{{dataObject.duration}}</td>
+                  </tr>
+
+
+
+              </tbody>
+          </table>
+      </div>
+  </div>
+  </body>
+</html>
+

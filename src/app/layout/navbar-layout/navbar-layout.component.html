@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light  " style="position:fixed;z-index: 4;width: 100%;">
+  <a class="navbar-brand text-primary" href="#">
+    <div style="display: flex;">
+      <img src="../../../assets/images/logoclinique.jpg" style="height: 50px;width: 50px;" alt="logo" class="mb-30">
+      <h2 style="color: blue;padding-top:5px ;"><b>Espoir </b></h2>
+    </div>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item ">
+        <a class="nav-link text-primary mt-2" routerLink="/">Accueil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-primary mt-2" routerLink="/aboutus">A-Propos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-primary mt-2" routerLink="/medecins">Médecins</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-primary mt-2" routerLink="/contact">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-primary mt-2" routerLink="/appointement">Rendez-vous</a>
+      </li>
+      <div class="dropdown ">
+        <button class="btn btn-light dropdown-toggle text-primary mt-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Connexion
+        </button>
+        <div class="dropdown-content">
+          <a href="admin/login"class="nav-link text-primary">Administration</a>
+          <a href="medecin/login"class="nav-link text-primary">Médecins</a>
+          <a href="infirmier/login"class="nav-link text-primary">Infirmiers</a>
+        </div>
+      </div>
+    </ul>
+    <ul class="social-icons list-unstyled mb-0 mr-3 ml-3">
+      <a href="https://www.facebook.com/votrepage" target="_blank">
+        <img src="../../../assets/images/2021_Facebook_icon.svg" alt="" style="height: 40px;width: 40px;">
+      </a>
+      <a href="https://www.instagram.com/votreprofil" target="_blank">
+        <img src="../../../assets/images/instagram.png" alt=""style="height: 45px;width: 45px;">
+      </a>
+      <a href="https://twitter.com/yourusername" target="_blank">
+        <img src="../../../assets/images/twitter.png" alt=""style="height: 40px;width: 40px;">
+      </a>
+    </ul>
+  </div>
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+  </form>
+
+
+</nav>
+<!-- Ajout de Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- Ajout de jQuery et de Bootstrap JS pour les fonctionnalités de navigation -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5"></script>
+
